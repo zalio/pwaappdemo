@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Dashboard from './components/Dashboard';
 import About from './components/About';
 import Contact from './components/Contact';
+import Content from './components/Content';
 import './App.css';
 
 const App = () => {
@@ -13,9 +14,7 @@ const App = () => {
     <BrowserRouter>
       <Navbar />
       <Switch>
-        <Route exact path='/' component={Dashboard} />
-        <Route path='/about' component={About} />
-        <Route path='/contact' component={Contact} />
+        <Route exact path='/' component={Content} />
       </Switch>
     </BrowserRouter>
     // </BookContextProvider>
